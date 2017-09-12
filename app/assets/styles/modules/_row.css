@@ -15,12 +15,24 @@
 		padding-right: 100px;
 	}
 
-	&--guters-large {
+	&--gutters-small > div {
+		padding-right: 45px;
+	}
+
+	&--gutters-large {
 		margin-right: -100px;
 	}
 
 	&__b-margin-until-medium {
 		margin-bottom: 1rem;
+	}
+
+	&--t-padding {
+		padding-top: 80px;
+	}
+
+	&--gutters-small {
+		margin-right: -45px;
 	}
 
 	@mixin atMedium{
@@ -51,6 +63,19 @@
 	&__medium-8--smaller{
 		width: 63%;
 	}
+
 }
+	
+	&--equal-height-at-medium {
+		@mixin atMedium {
+			display: flex;
+		}
+
+		& > div {
+			float: none;
+			display: flex;
+		}
+	}
+
 }
 
